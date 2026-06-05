@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Roofing System – Best Roofing Company in Nigeria</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0A1628;--navy2:#0F1F3D;--navy3:#162848;
+  --blue:#2F5AAE;--blue-mid:#3D6DC0;--blue-light:#5B87D4;
+  --silver:#C8D6E8;--silver-light:#E8EFF8;--silver-pale:#F4F7FC;
+  --gold:#E8B84B;--gold-dim:rgba(232,184,75,0.15);
+  --white:#fff;--text:#0A1628;--muted:#5A6A80;--border:#D4DDE8;
+}
+body{font-family:'Sora',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{background:rgba(10,22,40,0.97);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:70px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:38px;height:38px;background:var(--blue);border-radius:6px;display:grid;place-items:center;flex-shrink:0}
+.logo-mark svg{width:22px;height:22px;fill:white}
+.logo-name{font-size:16px;font-weight:700;color:white;letter-spacing:-0.3px}
+.logo-name span{color:var(--gold)}
+.nav-items{display:flex;gap:28px;list-style:none}
+.nav-items a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.65);transition:color .2s;letter-spacing:0.2px}
+.nav-items a:hover{color:white}
+.nav-cta{background:var(--blue);color:white;padding:9px 22px;border-radius:6px;font-size:13px;font-weight:600;transition:background .2s;letter-spacing:0.2px}
+.nav-cta:hover{background:var(--blue-mid)}
+
+/* HERO */
+.hero{background:var(--navy);min-height:620px;padding:88px 5% 0;display:grid;grid-template-columns:55% 45%;gap:0;align-items:end;overflow:hidden;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(47,90,174,0.18) 0%,transparent 65%);pointer-events:none}
+.hero-left{padding-bottom:72px;position:relative;z-index:1}
+.hero-rating{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:var(--gold-dim);border:1px solid rgba(232,184,75,0.3);border-radius:24px;margin-bottom:28px}
+.hero-stars{display:flex;gap:2px}
+.hstar{width:14px;height:14px;fill:var(--gold)}
+.hero-rating-text{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px}
+.hero h1{font-size:54px;font-weight:800;color:white;line-height:1.08;letter-spacing:-1.5px;margin-bottom:22px}
+.hero h1 .line2{color:var(--gold);display:block}
+.hero-desc{font-family:'Crimson Pro',serif;font-size:20px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:40px;max-width:480px}
+.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn-blue{background:var(--blue);color:white;padding:14px 30px;border-radius:8px;font-size:15px;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-blue:hover{background:var(--blue-mid);transform:translateY(-1px);box-shadow:0 8px 24px rgba(47,90,174,0.35)}
+.btn-wa{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);padding:13px 24px;border-radius:8px;font-size:15px;font-weight:500;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-wa:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25)}
+.hero-metrics{display:flex;gap:0;margin-top:56px;border-top:1px solid rgba(255,255,255,0.08);padding-top:40px}
+.metric{flex:1;padding-right:32px;border-right:1px solid rgba(255,255,255,0.08)}
+.metric:last-child{border-right:none;padding-right:0}
+.metric-num{font-size:34px;font-weight:800;color:white;letter-spacing:-1px;line-height:1}
+.metric-num span{color:var(--gold)}
+.metric-label{font-size:12px;color:rgba(255,255,255,0.45);margin-top:6px;letter-spacing:0.3px}
+.metric:not(:first-child){padding-left:32px}
+
+/* HERO RIGHT — staggered cards */
+.hero-right{display:flex;flex-direction:column;gap:12px;justify-content:flex-end;padding-bottom:0;position:relative;z-index:1}
+.hero-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:20px 24px;transform:translateX(0)}
+.hero-card:nth-child(2){transform:translateX(24px)}
+.hero-card:nth-child(3){transform:translateX(8px)}
+.hc-label{font-size:11px;font-weight:600;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.hc-row{display:flex;align-items:center;gap:10px}
+.hc-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.hc-text{font-size:14px;color:rgba(255,255,255,0.8);font-weight:500}
+.hc-gold{background:var(--gold)}
+.hc-blue{background:var(--blue-light)}
+.hc-green{background:#4ADE80}
+.hc-rows{display:flex;flex-direction:column;gap:8px}
+
+/* TRUST STRIP */
+.trust{background:var(--silver-pale);border-bottom:1px solid var(--border);padding:22px 5%;display:flex;align-items:center;gap:48px;flex-wrap:wrap}
+.trust-label{font-size:11px;font-weight:700;color:#7A8FA6;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+.trust-list{display:flex;gap:36px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted)}
+.trust-item svg{width:18px;height:18px;fill:var(--blue)}
+
+/* PRODUCTS */
+.products{padding:80px 5%;background:white}
+.sh{text-align:center;margin-bottom:52px}
+.eyebrow{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px}
+.title{font-size:38px;font-weight:800;color:var(--navy);letter-spacing:-0.8px;line-height:1.15}
+.title em{font-style:normal;color:var(--blue)}
+.subtitle{font-family:'Crimson Pro',serif;font-size:19px;color:var(--muted);margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prod-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .25s}
+.prod-card:hover{border-color:var(--blue);transform:translateY(-4px);box-shadow:0 16px 40px rgba(47,90,174,0.1)}
+.prod-visual{height:140px;display:grid;place-items:center;position:relative}
+.prod-icon-bg{width:70px;height:70px;border-radius:14px;display:grid;place-items:center}
+.prod-icon-bg svg{width:38px;height:38px;fill:white}
+.prod-body{padding:22px 22px 20px}
+.prod-body h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.prod-body p{font-size:13px;color:var(--muted);line-height:1.65}
+.prod-tag{display:inline-flex;align-items:center;gap:5px;background:var(--silver-pale);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:600;color:var(--blue);margin-top:12px}
+
+/* SERVICES */
+.services{padding:80px 5%;background:var(--silver-pale)}
+.svc-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.svc-intro .eyebrow{text-align:left}
+.svc-intro .title{text-align:left;font-size:34px}
+.svc-intro .subtitle{text-align:left;margin-left:0;margin-right:0;font-size:17px}
+.svc-list{display:flex;flex-direction:column;gap:16px;margin-top:36px}
+.svc-item{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:all .2s}
+.svc-item:hover{border-color:var(--blue);box-shadow:0 4px 16px rgba(47,90,174,0.08)}
+.svc-ico{width:40px;height:40px;background:var(--blue);border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.svc-ico svg{width:22px;height:22px;fill:white}
+.svc-text h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.svc-text p{font-size:13px;color:var(--muted);line-height:1.6}
+.svc-right{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start;margin-top:52px}
+.svc-stat{background:var(--navy);border-radius:12px;padding:24px;text-align:center}
+.svc-stat-num{font-size:36px;font-weight:800;color:var(--gold);letter-spacing:-1px;line-height:1}
+.svc-stat-label{font-size:12px;color:rgba(255,255,255,0.5);margin-top:6px}
+.svc-highlight{background:var(--blue);border-radius:12px;padding:24px;grid-column:1/-1}
+.svc-highlight h4{font-size:15px;font-weight:700;color:white;margin-bottom:8px}
+.svc-highlight p{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6}
+
+/* COVERAGE */
+.coverage{background:var(--navy);padding:72px 5%;text-align:center}
+.coverage .eyebrow{color:rgba(232,184,75,0.7)}
+.coverage .title{color:white;margin-bottom:8px}
+.coverage .subtitle{color:rgba(255,255,255,0.55)}
+.countries{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:40px}
+.country{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:16px 24px;display:flex;align-items:center;gap:10px;transition:border-color .2s}
+.country:hover{border-color:rgba(232,184,75,0.4)}
+.country-flag{font-size:24px}
+.country-name{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85)}
+.country-detail{font-size:12px;color:rgba(255,255,255,0.4);margin-top:2px}
+
+/* REVIEWS */
+.reviews{padding:80px 5%;background:white}
+.reviews-top{display:flex;align-items:center;gap:32px;background:var(--navy);border-radius:16px;padding:32px 40px;margin-bottom:40px}
+.rating-giant{font-size:60px;font-weight:800;color:var(--gold);line-height:1;font-family:'Sora',sans-serif}
+.rating-info{}
+.rating-stars-row{display:flex;gap:4px;margin-bottom:6px}
+.rrs{width:22px;height:22px;fill:var(--gold)}
+.rating-count{font-size:14px;color:rgba(255,255,255,0.55)}
+.rating-summary{font-size:17px;color:white;font-weight:600;margin-top:6px;font-family:'Crimson Pro',serif}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{background:var(--silver-pale);border:1px solid var(--border);border-radius:14px;padding:24px}
+.rv-stars{display:flex;gap:3px;margin-bottom:12px}
+.rvs{width:15px;height:15px;fill:#F59E0B}
+.rv-quote{font-family:'Crimson Pro',serif;font-size:16px;color:var(--text);line-height:1.7;margin-bottom:18px;font-style:italic}
+.rv-person{display:flex;align-items:center;gap:10px}
+.rv-avatar{width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:13px;font-weight:700;flex-shrink:0}
+.rv-name{font-size:13px;font-weight:600;color:var(--navy)}
+.rv-loc{font-size:12px;color:var(--muted)}
+
+/* WHY */
+.why{padding:80px 5%;background:var(--silver-pale);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.why-left .eyebrow{text-align:left}
+.why-left .title{text-align:left;font-size:34px}
+.why-points{display:flex;flex-direction:column;gap:18px;margin-top:32px}
+.why-pt{display:flex;gap:14px;align-items:flex-start}
+.why-num{width:32px;height:32px;background:var(--blue);border-radius:6px;display:grid;place-items:center;font-size:13px;font-weight:700;color:white;flex-shrink:0}
+.why-pt-text h5{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.why-pt-text p{font-size:13px;color:var(--muted);line-height:1.6}
+.why-right{background:var(--navy);border-radius:18px;padding:36px;display:flex;flex-direction:column;gap:16px}
+.why-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:12px;padding:22px}
+.why-card-title{font-size:14px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.why-card-text{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.65}
+
+/* CONTACT */
+.contact{padding:80px 5%;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.contact .eyebrow{color:rgba(232,184,75,0.7);text-align:left}
+.contact .title{color:white;text-align:left;font-size:32px}
+.contact .subtitle{color:rgba(255,255,255,0.55);text-align:left;margin-left:0}
+.contact-info-list{display:flex;flex-direction:column;gap:14px;margin-top:32px}
+.ci{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:10px;padding:16px 20px;display:flex;gap:12px;align-items:flex-start}
+.ci-icon{width:36px;height:36px;background:rgba(47,90,174,0.3);border-radius:7px;display:grid;place-items:center;flex-shrink:0}
+.ci-icon svg{width:18px;height:18px;fill:var(--blue-light)}
+.ci-label{font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:2px}
+.ci-val{font-size:14px;font-weight:600;color:white}
+.contact-form{background:white;border-radius:16px;padding:36px}
+.cf-title{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:24px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:0.3px}
+.fg input,.fg select,.fg textarea{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:11px 14px;font-size:14px;font-family:'Sora',sans-serif;color:var(--text);transition:border-color .2s;background:var(--silver-pale)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--blue);background:white}
+.fg textarea{height:90px;resize:vertical}
+.fg-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cf-btn{width:100%;background:var(--blue);color:white;border:none;border-radius:8px;padding:14px;font-size:14px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;transition:background .2s;margin-top:4px;letter-spacing:0.3px}
+.cf-btn:hover{background:var(--blue-mid)}
+
+/* FOOTER */
+footer{background:#060E1C;padding:52px 5% 28px;border-top:1px solid rgba(255,255,255,0.05)}
+.ft{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:52px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.ft-brand{font-size:17px;font-weight:700;color:white;margin-bottom:10px}
+.ft-brand span{color:var(--gold)}
+.ft-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.7;max-width:270px}
+.ft-col h5{font-size:11px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,0.45);transition:color .2s}
+.ft-links a:hover{color:var(--gold)}
+.ft-bottom{display:flex;justify-content:space-between;padding-top:28px}
+.ft-copy{font-size:12px;color:rgba(255,255,255,0.25)}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-bottom:60px}
+  .hero-right{display:none}
+  .hero h1{font-size:36px}
+  .svc-layout,.why,.contact{grid-template-columns:1fr}
+  .products-grid,.rv-grid,.svc-right{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr}
+  .countries{gap:12px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M3 12L12 3l9 9v9a1 1 0 01-1 1H4a1 1 0 01-1-1v-9z"/></svg>
+    </div>
+    <div class="logo-name">Ideal <span>Roofing</span></div>
+  </div>
+  <ul class="nav-items">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#coverage">Coverage</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:+2348035516310" class="nav-cta">Get Free Quote</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-rating">
+      <div class="hero-stars">
+        <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <span class="hero-rating-text">4.9 · 151 Google Reviews</span>
+    </div>
+    <h1>Nigeria's Most<br><span class="line2">Trusted Roofer</span></h1>
+    <p class="hero-desc">Founded 2009 · 7,000+ roofs supplied · Trusted by engineers and homeowners across Nigeria, Benin Republic, Togo & Ghana.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-blue">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Get Free Quote
+      </a>
+      <a href="https://wa.me/2348035516310" class="btn-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric"><div class="metric-num">7,000<span>+</span></div><div class="metric-label">Roofs Supplied</div></div>
+      <div class="metric"><div class="metric-num">5,000<span>+</span></div><div class="metric-label">Clients Served</div></div>
+      <div class="metric"><div class="metric-num">15<span>+</span> yrs</div><div class="metric-label">In Business</div></div>
+      <div class="metric"><div class="metric-num">4<span> Nations</span></div><div class="metric-label">Coverage</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hc-label">Materials in Stock</div>
+      <div class="hc-rows">
+        <div class="hc-row"><div class="hc-dot hc-gold"></div><div class="hc-text">Stone-Coated Tiles — Gerard, Milano, Bond, Roman</div></div>
+        <div class="hc-row"><div class="hc-dot hc-blue"></div><div class="hc-text">Aluminium Roofing Sheets — All gauges & colours</div></div>
+        <div class="hc-row"><div class="hc-dot hc-green"></div><div class="hc-text">PVC Rain Gutters & Roof Accessories</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-label">Google Rating</div>
+      <div class="hc-row" style="gap:14px">
+        <div style="font-size:42px;font-weight:800;color:var(--gold);line-height:1">4.9</div>
+        <div>
+          <div style="display:flex;gap:3px;margin-bottom:4px">
+            <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="hstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.45)">151 Google Reviews</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-label">Location</div>
+      <div class="hc-row"><div class="hc-dot hc-blue"></div><div class="hc-text">101 Old Otta Rd, Opp. General Hospital, Agege, Lagos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <span class="trust-label">Verified by</span>
+  <div class="trust-list">
+    <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>4.9 on Google — 151 reviews</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>NZ-Manufactured Stone Tiles</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Free Consultation Available</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>Est. 2009 · 15+ Years</div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="sh">
+    <div class="eyebrow">Our Products</div>
+    <h2 class="title">Premium <em>Roofing Materials</em></h2>
+    <p class="subtitle">Every material we supply is sourced from verified manufacturers — tested to withstand Nigeria's coastal heat, humidity and rainfall.</p>
+  </div>
+  <div class="products-grid">
+    <div class="prod-card">
+      <div class="prod-visual" style="background:#0F1F3D">
+        <div class="prod-icon-bg" style="background:var(--gold)">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+      </div>
+      <div class="prod-body">
+        <h3>Stone-Coated Roofing Tiles</h3>
+        <p>Gerard, Milano, Bond, Roman — NZ-manufactured tiles. Exceptional aesthetics with 50-year lifespan. Rust-free, fade-resistant, coastal-rated.</p>
+        <div class="prod-tag">⭐ Most Popular</div>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-visual" style="background:#162848">
+        <div class="prod-icon-bg" style="background:var(--blue)">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+        </div>
+      </div>
+      <div class="prod-body">
+        <h3>Aluminium Roofing Sheets</h3>
+        <p>Lightweight, corrosion-resistant, excellent heat reflection. All gauges and colours. Budget-friendly option proven across Nigeria's climate.</p>
+        <div class="prod-tag">✓ All Gauges Available</div>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-visual" style="background:#0A1628">
+        <div class="prod-icon-bg" style="background:#2D6A4F">
+          <svg viewBox="0 0 24 24"><path d="M7 21H3V3h18v4H7v14zm10-4H9v-2h8v2zm0-4H9v-2h8v2zm2-4H9V7h10v2z"/></svg>
+        </div>
+      </div>
+      <div class="prod-body">
+        <h3>PVC Rain Gutters</h3>
+        <p>Expert-rated PVC water collectors. Flexible, maintenance-free, and non-corrosive — optimal for Lagos's heavy tropical rainfall seasons.</p>
+        <div class="prod-tag">✓ Expert Rated #1</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="svc-layout">
+    <div class="svc-intro">
+      <div class="eyebrow">What We Do</div>
+      <h2 class="title">End-to-End <em>Roofing Services</em></h2>
+      <p class="subtitle">From material supply to full installation, repair and repainting — we handle every aspect of your roofing project.</p>
+      <div class="svc-list">
+        <div class="svc-item">
+          <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+          <div class="svc-text"><h4>Roof Installation</h4><p>Expert installation from lintel stage to completion. In-house roofers skilled in drawing interpretation and truss construction.</p></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v11l4-4h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></div>
+          <div class="svc-text"><h4>Repair & Leak Fix</h4><p>Fast diagnosis and repair for storm-damaged, leaking, or aged roofs — we fix the root cause, not just the symptom.</p></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div class="svc-text"><h4>Material Supply</h4><p>We supply to builders, architects, and contractors across southern Nigeria — from Lagos to Enugu, Bayelsa, Rivers, Anambra and beyond.</p></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <div class="svc-text"><h4>Roof Repainting</h4><p>Restore your roof's colour and protection with professional repainting. Strengthens weatherproofing and adds years to your roof's life.</p></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="svc-right">
+        <div class="svc-stat"><div class="svc-stat-num">7,000+</div><div class="svc-stat-label">Supplies nationwide</div></div>
+        <div class="svc-stat"><div class="svc-stat-num">5,000+</div><div class="svc-stat-label">Satisfied clients</div></div>
+        <div class="svc-highlight">
+          <h4>Roof Area Calculator</h4>
+          <p>Not sure how many sheets you need? Use our free online Roof Area Calculator to get an instant estimate — no guesswork, no wastage.</p>
+        </div>
+        <div class="svc-stat" style="background:var(--blue)"><div class="svc-stat-num" style="color:white">Free</div><div class="svc-stat-label">Consultation & Quote</div></div>
+        <div class="svc-stat" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.09)"><div class="svc-stat-num">4.9★</div><div class="svc-stat-label">Google rating</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="coverage" id="coverage">
+  <div class="eyebrow">Our Reach</div>
+  <h2 class="title" style="color:white">Roofing Across <em style="color:var(--gold);font-style:normal">4 Nations</em></h2>
+  <p class="subtitle">We supply and install across Nigeria and ship to neighbouring West African countries. Engineers trust us from Lagos to Accra.</p>
+  <div class="countries">
+    <div class="country"><div class="country-flag">🇳🇬</div><div><div class="country-name">Nigeria</div><div class="country-detail">Lagos · Enugu · Rivers · Bayelsa · Anambra · Ondo</div></div></div>
+    <div class="country"><div class="country-flag">🇧🇯</div><div><div class="country-name">Benin Republic</div><div class="country-detail">Cotonou & surrounds</div></div></div>
+    <div class="country"><div class="country-flag">🇹🇬</div><div><div class="country-name">Togo</div><div class="country-detail">Lomé & surrounds</div></div></div>
+    <div class="country"><div class="country-flag">🇬🇭</div><div><div class="country-name">Ghana</div><div class="country-detail">Accra & surrounds</div></div></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="sh">
+    <div class="eyebrow">Customer Reviews</div>
+    <h2 class="title">Trusted by <em>Engineers & Homeowners</em></h2>
+  </div>
+  <div class="reviews-top">
+    <div class="rating-giant">4.9</div>
+    <div class="rating-info">
+      <div class="rating-stars-row">
+        <svg class="rrs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="rrs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="rrs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="rrs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="rrs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="rating-count">Based on 151 verified Google reviews</div>
+      <div class="rating-summary">"Fast delivery and reliable quality on their aluminum products. Highly recommend." — Verified Client</div>
+    </div>
+  </div>
+  <div class="rv-grid">
+    <div class="rv">
+      <div class="rv-stars"><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <p class="rv-quote">"High quality roofing, well done. They were professional, kept to schedule, and the Milano tiles look fantastic. Still perfect two years on."</p>
+      <div class="rv-person"><div class="rv-avatar">MH</div><div><div class="rv-name">Mohd Hassan</div><div class="rv-loc">Verified Google Review</div></div></div>
+    </div>
+    <div class="rv">
+      <div class="rv-stars"><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <p class="rv-quote">"Found them professional and very responsive. Delivery was exactly on time. I especially appreciated how they guided me on the right material for my area."</p>
+      <div class="rv-person"><div class="rv-avatar" style="background:#2F5AAE">AO</div><div><div class="rv-name">Adekunle Omidiora</div><div class="rv-loc">Lagos · Google Review · 2025</div></div></div>
+    </div>
+    <div class="rv">
+      <div class="rv-stars"><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="rvs" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <p class="rv-quote">"Ideal Roofing supplied and installed our stone-coated tiles. Everything from start to finish was smooth. The team was fast, tidy, and knew exactly what they were doing."</p>
+      <div class="rv-person"><div class="rv-avatar" style="background:#1A3C34">NK</div><div><div class="rv-name">Nkechi Obiora</div><div class="rv-loc">Enugu · Google Review</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="about">
+  <div class="why-left">
+    <div class="eyebrow">Why Choose Us</div>
+    <h2 class="title">The Ideal <em>Difference</em></h2>
+    <div class="why-points">
+      <div class="why-pt"><div class="why-num">1</div><div class="why-pt-text"><h5>NZ-Manufactured Tiles</h5><p>Our stone-coated tiles are crafted to New Zealand standard — the global benchmark for quality, durability, and aesthetics.</p></div></div>
+      <div class="why-pt"><div class="why-num">2</div><div class="why-pt-text"><h5>Coastal Climate Tested</h5><p>All materials are verified to resist rust, fading, and corrosion even in Lagos's harsh coastal humidity — our earliest roofs prove it.</p></div></div>
+      <div class="why-pt"><div class="why-num">3</div><div class="why-pt-text"><h5>Engineers Trust Us</h5><p>We're the preferred supplier for structural and building engineers across Nigeria — trusted with large-scale residential and commercial projects.</p></div></div>
+      <div class="why-pt"><div class="why-num">4</div><div class="why-pt-text"><h5>Budget-Friendly, Never Cheap</h5><p>We believe premium roofing should be accessible. Competitive pricing with no compromise on material quality or installation standards.</p></div></div>
+    </div>
+  </div>
+  <div class="why-right">
+    <div class="why-card">
+      <div class="why-card-title">Sales Manager Direct Line</div>
+      <div class="why-card-text">Michael Chibuzo, our Sales Manager, handles all project enquiries personally. You'll always speak to someone who knows roofing inside out.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-card-title">Free Roof Area Calculator</div>
+      <div class="why-card-text">The only Lagos roofing company with an online roof area calculator — get an instant material estimate before you even call us.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-card-title">Updated Pricelist Always Live</div>
+      <div class="why-card-text">We publish and update our pricelist monthly so you always know what to expect. No surprises, no hidden charges.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div>
+    <div class="eyebrow">Contact Us</div>
+    <h2 class="title">Let's Start<br>Your Roof Project</h2>
+    <p class="subtitle" style="margin-top:12px">Free consultations available. We respond same day on WhatsApp.</p>
+    <div class="contact-info-list">
+      <div class="ci">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div><div class="ci-label">Address</div><div class="ci-val">101 Old Otta Rd, Opp. General Hospital, Orile Agege, Lagos</div></div>
+      </div>
+      <div class="ci">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val">+234 803 551 6310</div></div>
+      </div>
+      <div class="ci">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div>
+        <div><div class="ci-label">Website</div><div class="ci-val">idealroofingsystem.com</div></div>
+      </div>
+      <div class="ci">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919z"/></svg></div>
+        <div><div class="ci-label">Social</div><div class="ci-val">@idealroofingsys on Twitter / X</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <div class="cf-title">Get a Free Quote</div>
+    <div class="fg-2">
+      <div class="fg"><label>Full Name</label><input type="text" placeholder="Your name"></div>
+      <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+234..."></div>
+    </div>
+    <div class="fg"><label>Location (State / LGA)</label><input type="text" placeholder="e.g. Agege, Ikeja, Enugu..."></div>
+    <div class="fg"><label>Service Needed</label>
+      <select>
+        <option>New Roof Installation</option>
+        <option>Roof Repair / Leak Fix</option>
+        <option>Material Supply Only</option>
+        <option>Roof Repainting</option>
+        <option>Rain Gutter Installation</option>
+        <option>Free Consultation</option>
+      </select>
+    </div>
+    <div class="fg"><label>Roof Type Interested In</label>
+      <select>
+        <option>Stone-Coated Tiles (Gerard/Milano/Bond)</option>
+        <option>Aluminium Roofing Sheets</option>
+        <option>Not Sure — Need Advice</option>
+      </select>
+    </div>
+    <div class="fg"><label>Project Details</label><textarea placeholder="Tell us about your building — size, current roof situation, timeline..."></textarea></div>
+    <button class="cf-btn">Send — Get Free Quote Today</button>
+  </div>
+</section>
+
+<footer>
+  <div class="ft">
+    <div>
+      <div class="ft-brand">Ideal <span>Roofing</span> System</div>
+      <p class="ft-desc">Nigeria's most trusted roofing company since 2009. 7,000+ supplies, 5,000+ satisfied clients across Nigeria and West Africa. Your engineers trust us.</p>
+    </div>
+    <div class="ft-col">
+      <h5>Services</h5>
+      <ul class="ft-links">
+        <li><a href="#">Roof Installation</a></li>
+        <li><a href="#">Roof Repairs</a></li>
+        <li><a href="#">Material Supply</a></li>
+        <li><a href="#">Roof Repainting</a></li>
+        <li><a href="#">Rain Gutters</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Resources</h5>
+      <ul class="ft-links">
+        <li><a href="#">Updated Pricelist</a></li>
+        <li><a href="#">Roof Area Calculator</a></li>
+        <li><a href="#">Roofing Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">© 2026 Ideal Roofing System. 101 Old Otta Rd, Orile Agege, Lagos, Nigeria.</p>
+    <p class="ft-copy">idealroofingsystem.com · @idealroofingsys</p>
+  </div>
+</footer>
+
+</body>
+</html>
